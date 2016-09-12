@@ -56,6 +56,13 @@ body{
     text-align: center;
 }
 
+.caterer{
+  font-size: 12px;
+  text-align: center;
+  color: rgba(255,255,255,0.5);
+  font-style: italic;
+}
+
 .site-footer{
     padding: 20px 0;
     background: #fafafa;
