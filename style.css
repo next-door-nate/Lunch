@@ -57,6 +57,7 @@ a:hover{
 
 .featured-area h2{
     text-align: center;
+    margin-top: 30px;
 }
 
 .featured-area p{
@@ -79,4 +80,15 @@ a:hover{
 .copyright{
     margin: 0;
     text-align: center;
+}
+
+.veggie{
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.veggie svg{
+  width: 12px;
+  height: auto;
+  margin:0 10px 0 0;
 }
