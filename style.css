@@ -96,3 +96,12 @@ a:hover{
   height: auto;
   margin:0 10px 0 0;
 }
+
+
+.heart{
+  margin-top: 50px;
+  color: #3d67c7;
+}
+.heart:hover{
+  color: #f05f5f;
+}
