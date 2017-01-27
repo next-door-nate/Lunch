@@ -10,9 +10,22 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+a{
+  text-decoration: none;
+  color: #3d67c7;
+}
+
+a:hover{
+  color: #b2bcd1;
+}
+
 .wrapper{
   position: relative;
   z-index: 10000;
+}
+
+.lunch{
+  padding: 0 15px;
 }
 
 .featured-area{
@@ -30,6 +43,7 @@ body{
     height: auto;
     min-height: 100%;
     position: relative;
+    padding: 60px 0;
 }
 
 .featured-area canvas{
@@ -41,25 +55,53 @@ body{
 
 .featured-area h1{
     margin-top: 0;
-    padding-top: 100px;
     text-align: center;
     font-size: 38px;
 }
 
 .featured-area h2{
     text-align: center;
+    margin-top: 30px;
 }
 
 .featured-area p{
     text-align: center;
 }
 
+.caterer{
+  font-size: 12px;
+  text-align: center;
+  color: rgba(255,255,255,0.5);
+  font-style: italic;
+}
+
+
 .site-footer{
-    padding: 20px 0;
+    padding: 20px;
     background: #fafafa;
 }
 
 .copyright{
     margin: 0;
     text-align: center;
+}
+
+.veggie{
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.veggie svg{
+  width: 12px;
+  height: auto;
+  margin:0 10px 0 0;
+}
+
+
+.heart{
+  margin-top: 50px;
+  color: #3d67c7;
+}
+.heart:hover{
+  color: #f05f5f;
 }
