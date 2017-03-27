@@ -37,6 +37,29 @@ $(document).ready(function(){
 	});
 
 
+  $.getJSON("https://cdn.contentful.com/spaces/6qqte9wlq16o/entries?access_token=bab0ec81f61331d6e29f5c0e3164d8d506c5ae6957088607c0125a71124177c7", function(data) {
+  	var menu = [];
+  	$.each(data.items[0].fields, function(key, val) {
+  		if (key == "weekStart" || key == "weekEnd" || key == "weekTitle") {
+
+      } else {
+  			if (key == "caterer") {
+  				if (val == "All Seasons") {
+  					menu.push("<a href='http://allseasonscatering.ca/'>" + val + "</a>");
+  				} else {
+  					menu.push("<p class='caterer'>Catered by: <a href='http://www.urbanprairiecuisine.com/'>" + val + "</a></p>");
+  				}
+  			} else {
+  				menu.push("<h2>" + key + "</h2><p>" + val + "</p>");
+  			}
+  		}
+  	});
+  	$("<div/>", {
+  		"class": "menu",
+  		html: menu.join("").replace(/([,])/g, "<br />")
+  	}).appendTo("section");
+  });
+
 
 
   /*====================================================
