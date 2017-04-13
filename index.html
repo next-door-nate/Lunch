@@ -63,7 +63,6 @@
         	var menu = [];
         	$.each(data.items[0].fields, function(key, val) {
         		if (key == "weekStart" || key == "weekEnd" || key == "weekTitle") {
-
             } else {
         			if (key == "caterer") {
         				if (val == "All Seasons") {
@@ -72,7 +71,11 @@
         					menu.push("<p class='caterer'>Catered by: <a href='http://www.urbanprairiecuisine.com/'>" + val + "</a></p>");
         				}
         			} else {
-        				menu.push("<h2>" + key + "</h2><p>" + val + "</p>");
+                if ( key.indexOf('Veg') != -1 ){
+                  menu.push("<p><span class='veggie'><img src='img/veggie.svg' width='12' height='12' alt='Veggie Icon' /></span>" + val + "</p>");
+                } else {
+        				  menu.push("<div class='"+ key +"'><h2>" + key + "</h2><p>" + val + "</p></div>");
+                }
         			}
         		}
         	});
