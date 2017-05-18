@@ -1,15 +1,11 @@
 <svg width="97" height="105" viewBox="0 0 97 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<title>Group</title>
+<title>Vector</title>
 <desc>Created using Figma</desc>
 <g id="Canvas" transform="translate(-316 123)">
-<g id="Group">
-<g id="Group">
 <g id="Vector">
 <use xlink:href="#path0_fill" transform="translate(316 -123)" fill="#FFFFFF"/>
 <use xlink:href="#path1_fill" transform="translate(316 -123)" fill="#FFFFFF"/>
 <use xlink:href="#path2_fill" transform="translate(316 -123)" fill="#FFFFFF"/>
-</g>
-</g>
 </g>
 </g>
 <defs>
