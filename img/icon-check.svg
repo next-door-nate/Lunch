@@ -1,0 +1,12 @@
+<svg width="130" height="89" viewBox="0 0 130 89" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>&#216;Cx</title>
+<desc>Checkmark</desc>
+<g id="Canvas" transform="translate(-70 119)">
+<g id="Vector (Stroke)">
+<use xlink:href="#path0_fill" transform="translate(70 -119)" fill="#616161"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 128.243 1.75736C 130.586 4.1005 130.586 7.89949 128.243 10.2426L 51.2426 87.2426C 48.8995 89.5858 45.1005 89.5858 42.7574 87.2426L 1.75736 46.2426C -0.585786 43.8995 -0.585786 40.1005 1.75736 37.7574C 4.1005 35.4142 7.89949 35.4142 10.2426 37.7574L 47 74.5147L 119.757 1.75736C 122.101 -0.585786 125.899 -0.585786 128.243 1.75736Z"/>
+</defs>
+</svg>
