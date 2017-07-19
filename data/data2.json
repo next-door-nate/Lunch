@@ -3,7 +3,7 @@
     "name": "Views",
     "show": true,
     "color": "red",
-    "currentViews": 22,
+    "currentViews": 92,
     "data": [
       {
         "date": "2017-06-07",
@@ -13,32 +13,32 @@
       {
         "date": "2017-06-06",
         "time": "14:33:33",
-        "count": 123
+        "count": 83
       },
       {
         "date": "2017-06-05",
         "time": "14:33:33",
-        "count": 123
+        "count": 121
       },
       {
         "date": "2017-06-04",
         "time": "14:33:33",
-        "count": 123
+        "count": 110
       },
       {
         "date": "2017-06-03",
         "time": "14:33:33",
-        "count": 123
+        "count": 156
       },
       {
         "date": "2017-06-02",
         "time": "14:33:33",
-        "count": 123
+        "count": 184
       },
       {
         "date": "2017-06-01",
         "time": "14:33:33",
-        "count": 123
+        "count": 111
       }
     ]
   },
@@ -46,42 +46,42 @@
     "name": "Adds",
     "show": true,
     "color": "blue",
-    "currentViews": 22,
+    "currentViews": 52,
     "data": [
       {
         "date": "2017-06-07",
         "time": "14:33:33",
-        "count": 123
+        "count": 93
       },
       {
         "date": "2017-06-06",
         "time": "14:33:33",
-        "count": 123
+        "count": 63
       },
       {
         "date": "2017-06-05",
         "time": "14:33:33",
-        "count": 123
+        "count": 98
       },
       {
         "date": "2017-06-04",
         "time": "14:33:33",
-        "count": 123
+        "count": 76
       },
       {
         "date": "2017-06-03",
         "time": "14:33:33",
-        "count": 123
+        "count": 99
       },
       {
         "date": "2017-06-02",
         "time": "14:33:33",
-        "count": 123
+        "count": 124
       },
       {
         "date": "2017-06-01",
         "time": "14:33:33",
-        "count": 123
+        "count": 87
       }
     ]
   },
@@ -94,37 +94,37 @@
       {
         "date": "2017-06-07",
         "time": "14:33:33",
-        "count": 123
+        "count": 53
       },
       {
         "date": "2017-06-06",
         "time": "14:33:33",
-        "count": 123
+        "count": 44
       },
       {
         "date": "2017-06-05",
         "time": "14:33:33",
-        "count": 123
+        "count": 53
       },
       {
         "date": "2017-06-04",
         "time": "14:33:33",
-        "count": 123
+        "count": 43
       },
       {
         "date": "2017-06-03",
         "time": "14:33:33",
-        "count": 123
+        "count": 68
       },
       {
         "date": "2017-06-02",
         "time": "14:33:33",
-        "count": 123
+        "count": 97
       },
       {
         "date": "2017-06-01",
         "time": "14:33:33",
-        "count": 123
+        "count": 59
       }
     ]
   }
