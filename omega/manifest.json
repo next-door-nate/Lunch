@@ -1,0 +1,15 @@
+{
+  "short_name": "Lunch.Email",
+  "name": "Lunch comin' atcha!",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#f2f5f7",
+  "background_color": "#ffffff"
+}
