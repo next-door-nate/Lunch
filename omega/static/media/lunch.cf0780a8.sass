@@ -1,0 +1,160 @@
+//======================================
+//  Variables
+//======================================
+
+// Colors ===========
+$white: #fff
+$white85: rgba(255,255,255,.85)
+$white50: rgba(255,255,255,.5)
+$fancyblue: #324564
+$bluesteak: #0d1625
+
+$bg-gradient-initial: linear-gradient(to -60deg, $bluesteak 0%,$bluesteak 100%)
+$bg-gradient: linear-gradient(to -60deg, $fancyblue 0%,$bluesteak 100%)
+
+$title-font: "mr-eaves-sans",sans-serif
+$secondary-font: "mrs-eaves-xl-serif",serif
+
+
+html
+  width: 100%
+  height: 100%
+  background: black
+  font-family: $secondary-font
+  margin: 0
+  padding: 0
+
+body
+  width: 100%
+  height: 100%
+  margin: 0
+  padding: 0
+  font-size: 62.5%
+
+#root
+  width: 100%
+  height: 100%
+
+
+// Type ===========
+h1
+  color: $white85
+  font-family: $title-font
+  font-weight: 400
+  font-size: 2.5rem
+  text-align: center
+
+h2
+  font-family: $title-font
+  font-weight: 400
+  font-size: 1.75rem
+  color: $white50
+  text-align: center
+
+.lunch
+  position: relative
+  background: $bg-gradient
+  width: 100%
+  height: 100%
+  transition: all 1.5s ease-in-out
+  z-index: 1
+  perspective: 700px
+
+  &__wrap
+    position: relative
+    width: 80%
+    margin: 0 auto
+    padding-top: 100px
+    z-index: 3
+
+  &__app
+    width: 100%
+    height: 100%
+
+  &__omega
+    opacity: 1
+    transform: translate3d(0,0,0) rotate3d(0,1,0, 0deg)
+    transition: transform .7s cubic-bezier(0.71, 0.33, 0.3, 0.8), opacity 1s linear
+
+.roadmap
+  opacity: 1
+  transform: translate3d(0,0,0) rotate3d(0,1,0, 0deg)
+  transition: transform .7s cubic-bezier(0.71, 0.33, 0.3, 0.8) 1.5s, opacity 1s linear 1.5s
+  color: #8d939e
+  font-size: 1.25rem
+  line-height: 1.75rem
+  font-family: $title-font
+  font-weight: 400
+  max-width: 500px
+  margin: 60px auto 0
+  transform-origin: center center
+  text-align: center
+
+  ul
+
+    li
+      list-style: none
+      padding: 10px 0
+      text-align: left
+
+      &::before
+        content: "\274C"
+        margin-right: 10px
+        font-size: 1.75rem
+        position: relative
+        top: 6px
+
+
+  &--complete
+
+    &::before
+      content: "\270C" !important
+
+
+
+
+.gradient
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: $bg-gradient-initial
+  opacity: 0
+  z-index: 2
+  transition: opacity 1s ease-in-out
+
+
+.menu
+  width: 100%
+  display: flex
+  color: $bluesteak
+  perspective: 2000px
+
+  &__item
+    padding: 30px
+    background: $white
+    transform: translate3d(0px, 0px, 0px) rotate3d(0.15, .85, 0.15, 20deg)
+    opacity: 1
+    transition: transform .8s cubic-bezier(0.71, 0.33, 0.3, 0.9) .1s, opacity 1s linear
+
+    &__wrap
+      width: 25%
+
+  &-transition-appear
+    transform: translate3d(30px, 30px, 30px) rotate3d(0, 1, 0, 0deg)
+    opacity: 0
+
+// CSSTransitionGroup styles ===========
+.initial-transition-appear
+  .gradient
+    opacity: 1
+
+  .lunch
+    &__omega
+      opacity: 0
+      transform: rotate3d(.18,1,.24, 15deg)
+
+  .roadmap
+      opacity: 0
+      transform: translate3d(0,0,-80px)
