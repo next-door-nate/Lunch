@@ -46,7 +46,7 @@
 
       ga('create', 'UA-29923838-4', 'auto');
       ga('send', 'pageview');
-      
+
     </script>
 
     <script type="text/javascript">
@@ -73,9 +73,11 @@
         				}
         			} else {
                 if ( key.indexOf('Veg') != -1 ){
-                  menu.push("<p><span class='veggie'><img src='img/veggie.svg' width='12' height='12' alt='Veggie Icon' /></span>" + val + "</p>");
+
+                  menu.push("<p><span class='veggie'><img src='img/veggie.svg' width='12' height='12' alt='Veggie Icon' /></span><a class='google-search' href='http://www.google.com/search?q=" + val + "'>" + val + "</a></p>");
                 } else {
-        				  menu.push("<div class='"+ key +"'><h2>" + key + "</h2><p>" + val + "</p></div>");
+                        var formattedVal = googler(val);
+                        menu.push("<div class='"+ key +"'><h2>" + key + "</h2><p> " + formattedVal + "</p></div>");
                 }
         			}
         		}
@@ -87,6 +89,18 @@
         });
 
       });
+
+        function googler(val){
+
+            var items =  val.splice('<br>');
+            items.forEach(function(item , index){
+                items[index] = "<a class='google-search' href='http://www.google.com/search?q=" + item + "'>" +item+"</a>";
+            });
+
+            return items.join('<br>');
+
+        }
+
     </script>
 
 
