@@ -111,12 +111,12 @@ a:hover{
 .heart:hover{
   color: #f05f5f;
 }
-a.google-search {
+.google-search {
     text-decoration: none;
     color: white !important;
 }
 
-a.google-search:hover {
+.google-search:hover {
     text-decoration: underline;
     color: rgba(255,255,255,.75) !important;
 }
