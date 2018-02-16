@@ -111,3 +111,7 @@ a:hover{
 .heart:hover{
   color: #f05f5f;
 }
+a.google-search {
+    text-decoration: none;
+    color: white;
+}
