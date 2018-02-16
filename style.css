@@ -113,5 +113,10 @@ a:hover{
 }
 a.google-search {
     text-decoration: none;
-    color: white;
+    color: white !important;
+}
+
+a.google-search:hover {
+    text-decoration: underline;
+    color: rgba(255,255,255,.75) !important;
 }
