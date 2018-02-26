@@ -74,7 +74,7 @@
         			} else {
                 if ( key.indexOf('Veg') != -1 ){
 
-                  menu.push("<p><span class='veggie'><img src='img/veggie.svg' width='12' height='12' alt='Veggie Icon' /></span><a class='google-search' href='http://www.google.com/search?q=" + val + "' target='_blank' rel='noopener noreferrer'>" + val + "</a></p>");
+                  menu.push("<p><span class='veggie'><img src='img/veggie.svg' width='12' height='12' alt='Veggie Icon' /></span><a class='google-search' href='http://www.google.com/search?q=" + encodeSearchQuery(val) + "' target='_blank' rel='noopener noreferrer'>" + val + "</a></p>");
                 } else {
                         var formattedVal = googler(val);
                         menu.push("<div class='"+ key +"'><h2>" + key + "</h2><p> " + formattedVal + "</p></div>");
@@ -94,11 +94,15 @@
 
             var items =  val.splice('<br>');
             items.forEach(function(item , index){
-                items[index] = "<a class='google-search' href='http://www.google.com/search?q=" + item + "' target='_blank' rel='noopener noreferrer'>" +item+"</a>";
+                items[index] = "<a class='google-search' href='http://www.google.com/search?q=" + encodeSearchQuery(item) + "' target='_blank' rel='noopener noreferrer'>" +item+"</a>";
             });
 
             return items.join('<br>');
 
+        }
+
+        function encodeSearchQuery(val) {
+          return encodeURIComponent(val).replace("'", "%27");
         }
 
     </script>
